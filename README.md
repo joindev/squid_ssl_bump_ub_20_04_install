@@ -22,6 +22,7 @@ squid будет проксировать по защищённым соедин
 - после создания ссылки, правим конфиг squid примерно так:
 
 
+```C
 
     ### конфликтует с systemd
     ### pid_filename /var/run/squid/squid.pid
@@ -101,17 +102,7 @@ squid будет проксировать по защищённым соедин
     refresh_pattern -i .+$ 43200 100% 432000 override-lastmod override-expire reload-into-ims ignore-reload
 
     cache deny all
+```
 
 
-using MarkdownSharp;
-using MarkdownSharp.Extensions.Mal;
-
-Markdown mark = new Markdown();
-
-// Short link for MAL - 
-// http://myanimelist.net/people/413/Kitamura_Eri => mal://Kitamura_Eri
-mark.AddExtension(new Articles()); 
-mark.AddExtension(new Profile());
-
-mark.Transform(text);
 
