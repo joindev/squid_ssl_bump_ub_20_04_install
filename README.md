@@ -63,7 +63,7 @@ squid будет проксировать по защищённым соедин
     minimum_object_size 0
     maximum_object_size_in_memory 512 KB
 
-    ##cache_peer usa.rotating.proxyrack.net parent 333 0 no-query default login=joinup_hetzner_gmail_com:d04532-ab8cb8-9f8eb4-151646-1ab4a1
+
 
     request_header_access From deny all
     request_header_access Server deny all
